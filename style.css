@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body */
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #131312;
+    /* overflow: hidden; */
+}
+/* nav */
+nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px 20px 140px;
+}
+/* navlinks */
+nav .navlinks{
+    position: relative;
+    width: 10.5%;
+    justify-content: space-evenly;
+    display: flex;
+}
+nav .navlinks i{
+    color: white;
+    font-size: 1.6em;
+    box-shadow: inset 0 0 1px 0.1px grey;
+    padding: 7px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+nav .navlinks i:hover{
+    box-shadow: inset 0 0 6px 0.02px grey;
+}
+/* navEmail */
+.emailMe{
+    
+}
+.emailMe button{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    box-shadow: inset 0 0 1px 0.1px grey;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 12.5px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+.emailMe button:hover{
+    box-shadow: inset 0 0 6px 0.02px grey;
+}
+/* Section cut1 */
+#cut1{
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+#cut1 .logoText{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cut1 .logoText h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: -30px;
+    font-weight: 900;
+    font-size: 23.5em;
+    color: white;
+}
+#ift{
+    z-index: -5;
+}
+#thr{
+    z-index: 1;
+}
+#cut1 #logoBanner{
+    background-color: rgb(255, 255, 0, 0.7);
+    display: flex;
+    position: absolute;
+    width: 102%;
+    height: 2.5vh;
+    align-items: center;
+    top: 50%;
+    left: -1%;
+    /* transform: translateY(-50%); */
+    transform: rotate(-6deg);
+    white-space: nowrap;
+    z-index: 2;
+}
+#cut1 #logoBanneR{
+    background-color: rgb(255, 255, 0, 0.7);
+    display: flex;
+    position: absolute;
+    width: 102%;
+    height: 2.5vh;
+    align-items: center;
+    top: 50%;
+    left: -1%;
+    /* transform: translateY(-50%); */
+    transform: rotate(6deg);
+    white-space: nowrap;
+    z-index: -1;
+}
+#cut1 #logoBanner h3{
+    margin: 0 10px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    color: black;
+}
+#cut1 #logoBanneR h3{
+    margin: 0 10px 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    color: black;
+}
+.word1{
+    animation: move1 20s linear infinite;
+    
+}
+.word2{
+    animation: move2 20s linear infinite;
+    transform: translateX(100%);
+}
+#cut1 .imgAvatar{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+}
+#cut1 .imgAvatar img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes move1 {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes move2 {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+/* section cut2 */
+#cut2{
+    /* border: 1px solid white; */
+    position: relative;
+    height: 25vh;
+    display: grid;
+    margin-top: 1vh;
+}
+#cut2 article{
+    position: relative;
+    top: 0;
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 20%;
+    height: 130px;
+}
+#cut2 article h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#cut2 article p{
+    color: rgb(150, 149, 149);
+    font-size: 16.1px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 22.3px;
+    font-weight:00;
+}
+#cut2 main{
+    width: 100%;
+    position: relative;
+    display: grid;
+}
+#cut2 main .socialIcons{
+    position: relative;
+    top: -4vh;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+.avatar{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: grid;
+    /* animation-delay: 3s; */
+    -webkit-box-reflect: below 0px  linear-gradient(transparent, transparent, transparent,#0004);
+}
+.avatar img{
+    object-fit: contain;
+    object-position: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.inc{
+    animation: bounce-top 0.9s both;    
+}
+@keyframes bounce-top {
+    0% {
+      transform: translateY(-45px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    24% {
+      opacity: 0;
+    }
+    40% {
+      transform: translateY(-24px);
+      animation-timing-function: ease-in;
+    }
+    65% {
+      transform: translateY(-12px);
+      animation-timing-function: ease-in;
+    }
+    82% {
+      transform: translateY(-6px);
+      animation-timing-function: ease-in;
+    }
+    93% {
+      transform: translateY(-4px);
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+/* section cut3 */
+#cut3{
+    /* border: 1px solid teal; */
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+#cut3 .imageContainer{
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+#cut3 .imageContainer .card{
+    /* border: 1px solid white; */
+    position: relative;
+    display: grid;
+    margin: auto;
+    padding-top: 1px;
+    margin-top: 18px;
+    width: 95%;
+    height: auto;
+    background: rgba(30, 30, 30, 0.59);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(30, 30, 30, 0.3);
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+#cut3 .imageContainer .card:hover{
+    background: rgba(65, 65, 65, 0.59);
+}
+#cut3 .imageContainer .card .image{
+    align-content: center;
+    margin: 5% 5% 0 5%;
+    left: 50%;
+    /* border: 1px solid teal; */
+    height: auto;
+    width: 90%;
+    box-shadow: 0 0 5px 0.5px black;
+}
+#cut3 .imageContainer .card .image img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+#cut3 .imageContainer .card .details{
+    position: relative;
+    align-content: center;
+    margin: 5% 5% 0 5%;
+    /* border: 1px solid crimson; */
+    width: 90%;
+    display: flex;
+    top: -10px;
+    align-items: center;
+}
+#cut3 .imageContainer .card .details .av{
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+#cut3 .imageContainer .card .details .avText{
+    margin-left: 20px;
+}
+#cut3 .imageContainer .card .details .avText h4{
+    color: whitesmoke;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+}
+#cut3 .imageContainer .card .details .avText p{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: grey;
+}
+#column-1{
+    margin-top: 15vh;
+}
+#column-2{
+    margin-top: 6vh;
+}
+#column-3{
+    margin-top: 9vh;
+}
+#column-4{
+    margin-top: 0vh;
+}
+#column-1, #column-2, #column-3, #column-4{
+    position: relative;
+    height: auto;
+    transition: all 0.2s ease;
+    /* border: 1px solid teal; */
+}
+#cut3 .imageContainer .card .details button{
+    position: absolute;
+    right: 0;
+    background-color: rgba(65, 65, 65, 0.59);
+    width: 70px;
+    font-size: 17px;
+    padding: 8px 12px 8px 12px;
+    color: silver;
+    border: none;
+    transition: all 0.1s ease;
+}
+#cut3 .imageContainer .card:hover .details button{
+    background-color: rgba(30, 30, 30, 0.59);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
